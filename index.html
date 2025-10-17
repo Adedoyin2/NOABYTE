@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NOABYTE — Web Design, UI/UX & Tech Training</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav-inner">
+      <div style="display:flex;align-items:center">
+        <div class="brand"><img style="height: 30px;" src="Logo1.png" alt=""></div>
+        <div class="socials">
+          <a href="https://www.facebook.com/noah.ogunwusi.5"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/adedoyin_ogunwusi"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ogunwusi-adedoyin-104154251"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Our Skills</a>
+        <a href="#testimonial">Testimonial</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+
+  <!-- Mobile slide menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></div>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Our Skills</a>
+    <a href="#testimonial">Testimonial</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <!-- HERO SECTION (Horizontal Scroll) -->
+  <main class="hero-wrapper" id="home">
+    <div class="hero-slides" id="heroSlides">
+      <section class="slide">
+        <video autoplay muted loop playsinline>
+          <source src="connect.mp4" type="video/mp4">
+        </video>
+        <div class="slide-content">
+          <span class="type" id="typed-1">Building strong partnerships and success stories</span>
+          <h2>We connect ideas with investors</h2>
+          <p>NOABYTE helps startups & businesses articulate their product vision, build high-quality digital products 
+            and create investor confidence.</p>
+          
+          <!-- <h2>We connect ideas with investors</h2>
+          <p>Building strong partnerships and success stories.</p> -->
+          <div class="hero-ctas">
+            <button class="btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+            <button class="btn outline" onclick="document.querySelector('#portfolio').scrollIntoView({behavior:'smooth'})">View Portfolio</button>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="bg" style="background:url('Office2.jpg') center/cover;"></div>
+        <div class="slide-content">
+          <span class="type" id="typed-2">A space where innovation thrives</span>
+          <h2>Modern office, creative teams</h2>
+          <p>Our studio fosters collaboration between designers, developers and strategists — delivering products that 
+            scale.</p>
+          
+          <div class="hero-ctas">
+            <button class="btn" onclick="document.querySelector('#services').scrollIntoView({behavior:'smooth'})">Our Services</button>
+            <button class="btn outline" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">About Us</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="bg" style="background:url('Office1.jpg') center/cover;"></div>
+        <div class="slide-content">
+          <span class="type">Tools & processes that empower</span>
+          <h2>Built for performance & usability</h2>
+          <p>From responsive websites to intuitive apps and powerful dashboards: we build solutions that users enjoy and businesses trust.</p>
+          
+          <div class="hero-ctas">
+            <button class="btn" onclick="document.querySelector('#skills').scrollIntoView({behavior:'smooth'})">See Our Skills</button>
+            <button class="btn outline" onclick="document.querySelector('#testimonial').scrollIntoView({behavior:'smooth'})">Client Stories</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-up">
+      <div class="section-head">
+        <h3>About Us</h3>
+      </div>
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+        <div style="flex:1;min-width:280px">
+          <!-- <h2 style="color:var(--text)">NOABYTE </h2> -->
+          <p class="muted" style="margin-top:10px">
+            NOABYTE, is a tech-driven company passionate about software development, programming, and digital innovation.
+            We specialize in building intelligent solutions, offering expert training, and providing mentorship to 
+            aspiring tech professionals. Backed by 5-star reviews, We are trusted nationwide for excellence in coding, 
+            software consulting, and developer education. <br>
+            Our mission is to deliver functional, scalable, and forward-thinking digital solutions that equip individuals,
+            businesses, and institutions to thrive in a technology-driven world. Our vision is to become a nationally 
+            recognized software and tech brand, known for strong technical execution, impactful mentorship, and a consistent
+            commitment to quality. <br>
+            We focus on software development, code-based solutions, technical training, and developer up skilling. Our 
+            values are built on innovation, clarity, excellence, continuous learning, and nationwide reach. We are 
+            committed to shaping the future of tech in Nigeria through modern tools, expert knowledge-sharing, and 
+            hands-on support.
+          </p>
+          <!-- <p style="margin-top:12px">We combine design thinking with engineering to build reliable, secure and user-friendly solutions — and we also teach aspiring developers and designers.</p> -->
+        </div>
+        <div style="width:360px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)">
+          <img style="max-height: 400px;" src="About1.jpeg">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="fade-up">
+      <div class="section-head">
+        <h3>Services</h3>
+      </div>
+      <p style="font-size: 15px; "> 
+          Our Services Are not only limited to what lidted here we cover a lit of tech fiels depending on what you waht 
+          to schive. 
+      </p>
+      <div class="grid services-grid">
+        <div class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h4>Web Design & Development</h4>
+          <p>Responsive websites, custom front-end, and performance-first development.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-pencil-ruler"></i>
+          <h4>UI / UX Design</h4>
+          <p>User-centered interfaces, prototypes and design systems.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-paint-brush"></i>
+          <h4>Graphic Design</h4>
+          <p>Branding, marketing creatives and design assets for print and web.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-video"></i>
+          <h4>Video Editing</h4>
+          <p>Promo videos, explainer clips and editing for social platforms.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-share-alt"></i>
+          <h4>Social Media Management</h4>
+          <p>Strategy, content and community management to grow your brand.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>Training & Mentorship</h4>
+          <p>We teach young people how to build apps, products and web systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="fade-up">
+      <div class="section-head">
+        <h3>Portfolio</h3>
+        <div class="muted">Selected projects & case studies</div>
+      </div>
+      <div class="grid portfolio-grid">
+        <div class="portfolio-item"><img src="EC.jpg" alt="Project 1"><div class="caption">E-commerce </div></div>
+        <div class="portfolio-item"><img src="Fitness.jpg" alt="Project 2"><div class="caption">Fintech Dashboard</div></div>
+        <div class="portfolio-item"><img src="BR.jpg" alt="Project 3"><div class="caption">Brand Website</div></div>
+        <div class="portfolio-item"><img src="SA.jpg" alt="Project 4"><div class="caption">SaaS Landing</div></div>
+        <div class="portfolio-item"><img src="MB.jpg" alt="Project 5"><div class="caption">Mobile App UI</div></div>
+        <div class="portfolio-item"><img src="ED.jpg" alt="Project 6"><div class="caption">Marketing Collateral</div></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade-up">
+      <div class="section-head">
+        <h3>Our Skills</h3>
+        <div class="muted">Skills that drive results (animated)</div>
+      </div>
+      <div class="grid skills-grid">
+        <div class="skill">
+          <div class="label"><strong>Web Development</strong><span class="muted">92%</span></div>
+          <div class="progress"><i data-val="92"></i></div>
+        </div>
+        <div class="skill">
+          <div class="label"><strong>UI / UX Design</strong><span class="muted">88%</span></div>
+          <div class="progress"><i data-val="88"></i></div>
+        </div>
+        <div class="skill">
+          <div class="label"><strong>Graphic Design</strong><span class="muted">85%</span></div>
+          <div class="progress"><i data-val="85"></i></div>
+        </div>
+        <div class="skill">
+          <div class="label"><strong>Video Editing</strong><span class="muted">80%</span></div>
+          <div class="progress"><i data-val="80"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY PEOPLE LIKE US -->
+    <section id="why" class="fade-up">
+      <div class="section-head">
+        <h3>Why People Like Us</h3>
+      </div>
+      <div class="grid why-grid">
+        <div class="why-card center">
+          <i class="fas fa-tags"></i>
+          <h4>Affordable Pricing</h4>
+          <p class="muted">Transparent, competitive pricing for startups and SMEs.</p>
+        </div>
+        <div class="why-card center">
+          <i class="fas fa-thumbs-up"></i>
+          <h4>Quality Service & Product</h4>
+          <p class="muted">We deliver robust, well-tested digital products.</p>
+        </div>
+        <div class="why-card center">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Secure Platform</h4>
+          <p class="muted">Security best-practices embedded in our projects.</p>
+        </div>
+        <div class="why-card center">
+          <i class="fas fa-mobile-alt"></i>
+          <h4>User-friendly Apps & Solutions</h4>
+          <p class="muted">Intuitive apps built with the end-user in mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonial" class="fade-up">
+      <div class="section-head">
+        <h3>Testimonials</h3>
+        <div class="muted">Clients share their experience</div>
+      </div>
+      <div class="testi-wrap">
+        <div class="testi-items" id="testiItems">
+          <div class="testi-card">
+            <p>"Thank's to NOABYTE for turning our idea into a working product and helped us raise funds. Excellent team."</p>
+            <div class="testi-meta">
+              <img class="testi-avatar" src="MG.jpg" alt="">
+              <div>
+                <div style="font-weight:800">Aisha Bello</div>
+                <div class="muted" style="font-size:13px">Founder, BrightApps</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p>"Great UX thinking our conversions improved after the redesign."</p>
+            <div class="testi-meta">
+              <img class="testi-avatar" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="">
+              <div>
+                <div style="font-weight:800">Emeka Okonkwo</div>
+                <div class="muted" style="font-size:13px">CEO, ShopWave</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p>"Their training program gave our graduates the confidence to ship real products."</p>
+            <div class="testi-meta">
+              <img class="testi-avatar" src="hero-img.jpeg" alt="">
+              <div>
+                <div style="font-weight:800">Chinelo N.</div>
+                <div class="muted" style="font-size:13px">Head of Talent</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-up">
+      <div class="section-head">
+        <h3>Contact Us</h3>
+        <div class="muted">Let's build something great together</div>
+      </div>
+      <div class="grid contact-grid">
+        <div class="contact-card">
+          <form id="contactForm">
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required placeholder="you@domain.com" />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project"></textarea>
+            </div>
+            <div style="display:flex;gap:10px">
+              <button type="submit" class="btn">Send Message</button>
+              <button style="color: #5DADE2" type="button" class="btn outline" onclick="window.location='mailto:noabytetech@gmail.com'">Email Us</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-card contact-info">
+          <h4>Information </h4>
+          <p><strong>Founder:</strong> OGUNWUSI ADEDOYIN NOAH</p>
+          <p><strong>Phone:</strong> <a href="tel:08039819143">08039819143</a>, <a href="tel:09044211688">09044211688</a></p>
+          <p><strong>Email:</strong> <a href="mailto:noabytetech@gmail.com">noabytetech@gmail.com</a></p>
+          <h4>Office Time</h4>
+          <p class="muted" style="margin-top:8px">Mon - Sat: 9 am - 5 pm .</p>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a href="https://www.facebook.com/noah.ogunwusi.5" class="btn outline" style="padding:8px 12px; 
+            color: #5DADE2"  >Facebook</a>
+            <!-- <a href="https://x.com/OgunwusiAdedoyin3?s=09" class="btn outline" style="padding:8px 12px ; 
+            color: #5DADE2">Twitter</a> -->
+            <a href="https://www.instagram.com/adedoyin_ogunwusi" class="btn outline" style="padding:8px 12px ;
+            color: #5DADE2">Instagram</a>
+            <a href="https://www.linkedin.com/in/ogunwusi-adedoyin-104154251" class="btn outline"
+             style="padding:8px 12px ; color: #5DADE2">LinkedIn</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </div> <!-- /container -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-inner" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div>
+        <strong>NOABYTE</strong>
+      </div>
+      <div style="color: white" class="muted">© <span id="yr"></span> NOABYTE, All rights reserved</div>
+      <div style="color: white;" class="muted">
+        <h3>Office Address</h3>
+        <p>University Mini-campues Ilorin, Kwara State</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>
+
